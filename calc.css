@@ -1,0 +1,112 @@
+@font-face {
+	font-family: Calculator;
+	src: url("./Calculator.ttf") format("truetype");
+
+}
+.calculator {
+
+	display:grid;
+	width: 200px;
+	height: 270px;
+	
+	grid-template: 70px repeat(4, 50px) / repeat(3, 50px);
+}
+
+#container {
+
+	background-color: #ededdd;
+	border-style: solid;
+	border-radius: 5px;
+	border-width: 2px;
+	border-color: #8a8871;
+	padding: 15px;
+	box-shadow: 0px 10px 0px #a6a48b;
+}
+
+#display {
+	grid-area: 1 / 1 / 2 / 5;
+	background-color: #a0a896; 
+	margin: 5px;
+	padding: 2px;
+	border-radius: 4px;
+	font-family:Calculator;
+	font-weight: bold;
+	font-size: 50px;
+	text-align: right;
+}
+
+.btn{
+	margin: 5px;
+	background-color: #fffffa;
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 22px;
+	box-shadow: 0px 2px 0px black;
+}
+
+#seven {
+	grid-area: 2 / 1;
+}
+#eight{
+	grid-area: 2 / 2;
+}
+#nine {
+	grid-area: 2 / 3;
+}
+
+#times {
+	grid-area: 2 / 4;
+	background-color: #cccbba;
+}
+
+
+#four {
+	grid-area: 3 / 1;
+}
+#five{
+	grid-area: 3 / 2;
+}
+#six {
+	grid-area: 3 / 3;
+}
+
+#minus {
+	grid-area: 3 / 4;
+	background-color: #cccbba;
+}
+
+#one{
+	grid-area: 4 / 1;
+}
+#two{
+	grid-area: 4 / 2;
+}
+#three{
+	grid-area: 4 / 3;
+}
+#zero{
+	grid-area: 5 / 1;
+}
+
+#divide {
+	grid-area: 5 / 2;
+	background-color: #cccbba;
+}
+
+#equals{
+	grid-area: 5 / 3;
+	background-color: #a6bf43;
+	color:white;
+}
+
+#plus{
+	grid-area: 4 / 4;
+	background-color: #cccbba;
+}
+
+#clr {
+	grid-area: 5 / 4;
+	color: white;
+	background-color: #4a0511;
+	font-size: 15px;
+}
